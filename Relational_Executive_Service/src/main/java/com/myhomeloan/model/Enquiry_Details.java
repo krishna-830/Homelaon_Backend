@@ -6,4 +6,5 @@ public class Enquiry_Details {
 	private String Omkar;
 	private String OmkAR;
 
+
 }
