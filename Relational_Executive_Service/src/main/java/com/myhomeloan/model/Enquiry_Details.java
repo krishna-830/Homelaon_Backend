@@ -4,4 +4,6 @@ public class Enquiry_Details {
 
 
 	
+	private int oma;
+	
 }
