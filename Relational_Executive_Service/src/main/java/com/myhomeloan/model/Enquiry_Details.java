@@ -6,5 +6,5 @@ public class Enquiry_Details {
 	private String name;
 	private String email;
 	private String Omkar1;
-	private String Omkar2;
+	private String Omkar23;
 }
