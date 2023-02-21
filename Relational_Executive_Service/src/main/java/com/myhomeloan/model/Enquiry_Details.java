@@ -7,4 +7,5 @@ public class Enquiry_Details {
 	private String email;
 	private String Omkar1;
 	private String Omkar23;
+	private String Omkar24;
 }
