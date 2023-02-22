@@ -1,11 +1,12 @@
 package com.myhomeloan.model;
 
+import lombok.Data;
+
+@Data
 public class Enquiry_Details {
 
-
-	
-
-	private int oma;
+	private int eid;
+	private String ename;
 	
 
 

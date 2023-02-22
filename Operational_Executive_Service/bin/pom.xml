@@ -24,6 +24,17 @@
     <artifactId>mysql-connector-java</artifactId>
     <version>5.1.27</version>
 </dependency>
+<<<<<<< HEAD
+=======
+
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.27</version>
+</dependency>
+	
+>>>>>>> f3488dfea21c6dd9e224253d2f4b344759f8860b
 	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
