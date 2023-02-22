@@ -1,6 +1,6 @@
 package com.myhomeloan.model;
 
-<<<<<<< HEAD
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -29,8 +29,6 @@ public class LoanDetails {
 	private String remark;
 	private String status;
 
-=======
-public class LoanDetails {
->>>>>>> f3488dfea21c6dd9e224253d2f4b344759f8860b
+
 
 }
