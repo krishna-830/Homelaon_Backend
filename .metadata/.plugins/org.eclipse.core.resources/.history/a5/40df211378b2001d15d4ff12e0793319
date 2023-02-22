@@ -1,0 +1,8 @@
+package com.myhomeloan.Model;
+
+public class CustomerVarification {
+	private int varificationID;
+	private String varificationDate;
+	private String Status;
+	private String Remarks;
+}

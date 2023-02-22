@@ -1,0 +1,3 @@
+spring.application.name=credit_manager
+server.port=9091
+

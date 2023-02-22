@@ -1,0 +1,52 @@
+package com.myhomeloan.Model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class SanctionLatter {
+    
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int sid;
+	@Column(name="sanc_Date")
+	private String sanctionDate;
+	@Column(name="pros_No")
+	private int prospectNo;
+	@Column(name="applicantname")
+	private String applicantName;
+	@Column(name="con_Detail")
+	private double contactDetails;
+	@Column(name="product")
+	private String product;
+	@Column(name="lona_amt_sanc")
+	private double loanAmtSanctioned;
+	@Column(name="intrest_type")
+	private String interestType;
+	@Column(name="intrest_rate")
+	private int rateOfInterest;
+	@Column(name="loan_ten")
+	private int loanTenure;
+	@Column(name="EmiperMonth")
+	private double monthlyEmiAmount;
+	@Column(name="payment_mode")
+	private String modeOfPayment;
+	@Column(name="remark")
+	private String remarks;
+	@Column(name="term_Condi")
+	private String termsandCondition;
+	@Column(name="status")
+	private String status;
+
+}

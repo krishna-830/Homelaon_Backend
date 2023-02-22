@@ -1,0 +1,20 @@
+package com.myhomeloan.Model;
+
+public class SanctionLatter {
+
+	private int sid;
+	private String sanctionDate;
+	private int prospectNo;
+	private String applicantName;
+	private double contactDetails;
+	private String product;
+	loanAmtSanctioned interestType
+	rateOfInterest
+	loanTenure
+	monthlyEmiAmount
+	modeOfPayment
+	remarks
+	terms&Condition
+	status
+
+}

@@ -1,0 +1,15 @@
+package com.myhomeloan.Model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CustomerVarification {
+	private int varificationID;
+	private String varificationDate;
+	private String Status;
+	private String Remarks;
+}
