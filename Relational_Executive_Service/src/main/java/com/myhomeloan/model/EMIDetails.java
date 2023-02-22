@@ -1,6 +1,5 @@
 package com.myhomeloan.model;
 
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -10,15 +9,14 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Cibil {
+@NoArgsConstructor
+public class EMIDetails {
 	@Id
-	private int cibilId;
-	private int cibilScore;
-	private String cibilScoreDateTime;
-	private String status;
-	private String remark;
+	private int emiID;
+	private double emiAmountMonthly;
+	private String nextEmiDueDate;
+	private String previousEmiStatus;
 
 
 }

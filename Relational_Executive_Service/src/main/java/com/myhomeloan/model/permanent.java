@@ -1,6 +1,5 @@
 package com.myhomeloan.model;
 
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -12,15 +11,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Profession {
+public class permanent {
 
 	@Id
-	private int pid;
-	private String ptype;
-	private double psalary;
-	private String psalarytype;
-	private String pworkingperiod;
-	private String pDesignation;
-	private byte[] psalaryslips;
-
+	private int aid;
+	private String cityname;
+	private String areaname;
+	private String district;
+	private String state;
+	private double pincode;
+	private int houseno;
+	private String Streetname;
 }

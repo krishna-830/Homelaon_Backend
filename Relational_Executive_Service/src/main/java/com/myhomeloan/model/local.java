@@ -1,6 +1,5 @@
 package com.myhomeloan.model;
 
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -8,17 +7,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Cibil {
+@Entity
+public class local {
+
 	@Id
-	private int cibilId;
-	private int cibilScore;
-	private String cibilScoreDateTime;
-	private String status;
-	private String remark;
-
-
+	private int aid;
+	private String cityname;
+	private String areaname;
+	private String district;
+	private String state;
+	private double pincode;
+	private int houseno;
+	private String Streetname;
 }
