@@ -1,14 +1,13 @@
-package com.myhomeloan;
+package com.myhomelaonapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CreditManagerServiceApplication {
+public class OperationalExecutiveServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CreditManagerServiceApplication.class, args);
-	System.out.println("Credit manager works");
+		SpringApplication.run(OperationalExecutiveServiceApplication.class, args);
 	}
 
 }
