@@ -20,7 +20,7 @@ public class AdminServiceIMPL implements AdminService {
 	@Override
 	public Employee getEmployeeByName(String name) {
 	
-		return dao.findbyByName(name);
+		return dao.findByName(name);
 	}
 
 	@Override

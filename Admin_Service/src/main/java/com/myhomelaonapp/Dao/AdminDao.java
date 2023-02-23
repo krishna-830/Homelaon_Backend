@@ -7,7 +7,7 @@ import com.myhomelaonapp.Model.Employee;
 @Repository
 public interface AdminDao extends JpaRepository<Employee, Integer> {
 
-	Employee findbyByName(String name);
+	Employee findByName(String name);
 
 
 
