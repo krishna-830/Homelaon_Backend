@@ -17,11 +17,8 @@ import lombok.NoArgsConstructor;
 public class CustomerVarification {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-
-	private int varificationID;
+    private int varificationID;
 	private String varificationDate;
-
-	private String Status;
-
-	private String Remarks;
+    private String Status;
+    private String Remarks;
 }
