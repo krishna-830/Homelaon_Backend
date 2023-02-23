@@ -1,7 +1,0 @@
-package com.myhomeloan.Repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface SanctionLettrerRepository extends JpaRepository<San, ID> {
-
-}

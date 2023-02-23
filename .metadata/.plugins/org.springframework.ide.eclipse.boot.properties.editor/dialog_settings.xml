@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.jdt.internal.ui.propertiesfileeditor.PropertiesFileSourceViewerConfiguration">
-<<<<<<< HEAD
 		<item key="size.x" value="679"/>
 		<item key="size.y" value="407"/>
-=======
-		<item key="size.x" value="483"/>
-		<item key="size.y" value="289"/>
->>>>>>> 3162218738830745f3024b11900faf0d83681121
 	</section>
 </section>

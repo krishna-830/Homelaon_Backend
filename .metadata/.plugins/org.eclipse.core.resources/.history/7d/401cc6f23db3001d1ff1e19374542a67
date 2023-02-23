@@ -1,7 +1,0 @@
-package com.myhomeloan.serviceImpl;
-
-import com.myhomeloan.service.CustomerService;
-
-public class CustomerServiceIMPL implements CustomerService {
-
-}

@@ -1,8 +1,0 @@
-package com.myhomeloan.proxyService;
-
-import org.springframework.cloud.openfeign.FeignClient;
-
-@FeignClient("credit_manager")
-public interface CMproxyService {
-
-}

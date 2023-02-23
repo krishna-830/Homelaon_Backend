@@ -1,8 +1,0 @@
-package com.myhomeloan.service;
-
-import com.myhomeloan.model.Customer;
-
-
-public interface CustomerService {
-	Customer SaveCustomer(Customer customer);
-}

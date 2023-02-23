@@ -2,14 +2,9 @@
 <aop-reference-model>
 <aop-project name="Eureka_Server"/>
 <aop-project name="Account_Head_Service"/>
-<<<<<<< HEAD
-<aop-project name="Credit_Manager_Service"/>
-<aop-project name="Relational_Executive_Service"/>
-=======
 <aop-project name="Admin_Service"/>
 <aop-project name="Credit_Manager_Service"/>
 <aop-project name="Relational_Executive_Service"/>
 <aop-project name="Config_Server"/>
 <aop-project name="API_Gateway"/>
->>>>>>> 3162218738830745f3024b11900faf0d83681121
 </aop-reference-model>
