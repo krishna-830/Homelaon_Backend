@@ -1,0 +1,11 @@
+package com.myhomeloan.service;
+
+import java.util.List;
+
+import com.myhomeloan.model.Customer;
+
+
+public interface CustomerService {
+	Customer SaveCustomer(Customer customer);
+	List<Customer> getAllCustomer();
+}

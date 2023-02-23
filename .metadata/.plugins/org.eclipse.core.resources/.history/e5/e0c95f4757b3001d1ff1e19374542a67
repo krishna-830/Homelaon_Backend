@@ -1,0 +1,22 @@
+package com.myhomeloan.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.myhomeloan.model.Customer;
+import com.myhomeloan.model.SanctionLetter;
+import com.myhomeloan.service.CustomerService;
+import com.myhomeloan.service.SanctionLetterService;
+
+@RestController
+@RequestMapping("/sanctionletter")
+public class SanctionLetterController {
+	@Autowired
+	private SanctionLetterService service;
+	
+}

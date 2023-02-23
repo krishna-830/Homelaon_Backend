@@ -1,0 +1,7 @@
+package com.myhomeloan.service;
+
+import com.myhomeloan.model.SanctionLetter;
+
+public interface SanctionLetterService {
+	SanctionLetter saveSanctionLetter(SanctionLetter sanctionLetter);
+}
