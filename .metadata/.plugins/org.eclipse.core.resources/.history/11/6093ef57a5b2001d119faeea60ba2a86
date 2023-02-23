@@ -1,0 +1,23 @@
+package com.myhomeloan.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.myhomeloan.Repository.EnquiryRepository;
+import com.myhomeloan.model.Enquiry_Details;
+
+@Service
+public class EnquiryServiceIMPL implements EnquiryService{
+	
+	@Autowired
+	private EnquiryRepository repo;
+
+	@Override
+	public Enquiry_Details SaveEnquiry(Enquiry_Details enquiry_details) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

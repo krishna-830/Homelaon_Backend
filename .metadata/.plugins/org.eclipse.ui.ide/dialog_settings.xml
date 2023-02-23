@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
+=======
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Dell\Desktop\Final Project\Homelaon_Backend\Config_Server"/>
+		<item value="C:\Users\Dell\Desktop\Final Project\Homelaon_Backend"/>
+	</list>
+>>>>>>> 3162218738830745f3024b11900faf0d83681121
 	<list key="installedFeatures">
 		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
 		<item value="org.aspectj:1.9.2.201908130916"/>

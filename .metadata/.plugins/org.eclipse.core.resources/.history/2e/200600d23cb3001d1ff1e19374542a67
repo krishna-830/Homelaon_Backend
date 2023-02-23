@@ -33,14 +33,9 @@ public class EnquiryServiceIMPL implements EnquiryService{
 	}
 
 	@Override
-	public Enquiry_Details deleteEnquiry(int eid) {
-		// TODO Auto-generated method stub
-		return null;
+	public void deleteEnquiry(int eid) {
+		repo.deleteById(eid);
+		
 	}
 	
-	
-	
-
-	
-
 }

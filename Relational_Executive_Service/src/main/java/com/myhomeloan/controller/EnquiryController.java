@@ -44,16 +44,24 @@ public class EnquiryController {
 	}
 	
 	
+	
 	@DeleteMapping("/deleteEnquiry/{eid}")
 	public ResponseEntity<String> deleteEnquiry(@PathVariable int eid){
-		Enquiry_Details Enquiry_Details = Service.deleteEnquiry(eid);
-		if(Enquiry_Details==null) {
-			System.out.println(HttpStatus.NOT_FOUND );
+		
+		ResponseEntity<Enquiry_Details> enquiry = getEnquiry(eid);
+		Enquiry_Details en = enquiry.getBody();
+		
+		
+		
+		if(en != null) {
+			 Service.deleteEnquiry(eid);
+			 return new ResponseEntity<String>("Enquiry Deleted", HttpStatus.OK);
 		}
 		else {
-			System.out.println(HttpStatus.FOUND);
+			return new ResponseEntity<String>("Enquiry Not Found", HttpStatus.NOT_FOUND);
+			
 		}
-		return new ResponseEntity<String>("Enquiry Deleted", HttpStatus.FOUND);
+		
 		
 	}
 	
