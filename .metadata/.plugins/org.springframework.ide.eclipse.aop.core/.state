@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Eureka_Server"/>
+<aop-project name="Account_Head_Service"/>
+<aop-project name="Admin_Service"/>
+<aop-project name="Credit_Manager_Service"/>
+<aop-project name="Relational_Executive_Service"/>
+<aop-project name="Config_Server"/>
+<aop-project name="API_Gateway"/>
+</aop-reference-model>

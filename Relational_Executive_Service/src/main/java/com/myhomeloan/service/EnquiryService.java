@@ -14,7 +14,7 @@ public interface EnquiryService {
 
 	List<Enquiry_Details> getAllEnquiry();
 
-	Enquiry_Details deleteEnquiry(int eid);
+	void deleteEnquiry(int eid);
 
 
 

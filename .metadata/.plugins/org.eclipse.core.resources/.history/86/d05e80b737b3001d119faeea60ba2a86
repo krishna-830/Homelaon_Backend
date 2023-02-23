@@ -1,0 +1,5 @@
+package com.myhomeloan.ExceptionHandler;
+
+public class NameInvalidException extends RuntimeException {
+
+}
