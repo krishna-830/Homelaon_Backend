@@ -2,6 +2,8 @@ package com.myhomeloan.model;
 
 import javax.jws.Oneway;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -17,6 +19,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Customer {
 	@Id
+	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int eID;
 	private String Name;
 	private String DOB;
@@ -28,7 +31,7 @@ public class Customer {
     private double cAmountPaidforHome;
     private double cToltalLoanRequired;
     
-    @OneToMany
+    @OneToOne
     private EducationaInfo cEducationalInfo;
     @OneToOne
     private AllPersonalDocs cAllPersonalDocs;
@@ -40,13 +43,13 @@ public class Customer {
     private Cibil ccbil;
     @OneToOne
     private LoanDetails cLoanDetails;
-    @OneToMany
+    @OneToOne
     private PreviousLoan cPreviousLoan;
     @OneToOne
     private AccountDetails cAccountDetails;
     @OneToOne
     private PropertyInfo cPropertyInfo;
-    @OneToMany
+    @OneToOne
     private GuarantorDetails cGuarantorDetails;
     
 
