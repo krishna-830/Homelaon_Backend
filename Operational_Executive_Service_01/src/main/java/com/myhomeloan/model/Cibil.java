@@ -2,6 +2,7 @@ package com.myhomeloan.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,7 +17,7 @@ public class Cibil {
 	@Id
 	private int cibilId;
 	private int cibilScore;
-	private String cibilScoreDateTime;
 	private String status;
 	private String remarks;
+	private int eID;
 }
