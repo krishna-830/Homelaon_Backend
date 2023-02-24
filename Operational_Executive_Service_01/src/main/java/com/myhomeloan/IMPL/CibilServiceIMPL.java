@@ -79,10 +79,12 @@ public class CibilServiceIMPL implements CibilService {
 	}
 
 	@Override
-	public List<Customer> getAllCustomer() {
+	public  List<Customer> getAllCustomer() {
 		
-		 ResponseEntity<List<Customer>> allCustomer = enqproxy.getAllCustomer();
-		return allCustomer.getBody() ;
+		
+	 List<Customer> clist = enqproxy.getAllCustomer().getBody();
+	return clist;
+		 
 	}
 
 	
