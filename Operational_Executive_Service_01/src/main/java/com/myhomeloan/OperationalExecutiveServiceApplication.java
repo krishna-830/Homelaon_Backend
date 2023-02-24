@@ -8,13 +8,13 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
 @SpringBootApplication
-  @EnableFeignClients
+  @EnableFeignClients("com.myhomeloan.communication")
   @EnableEurekaClient
 public class OperationalExecutiveServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OperationalExecutiveServiceApplication.class, args);
-		System.out.println("Operational Executive Department!!!!");
+		
 	}
 
 }
