@@ -72,6 +72,11 @@ public class CibilServiceIMPL implements CibilService {
 		return enqproxy.getAllEnquiry();
 	}
 
+	@Override
+	public List<Cibil> getAllCibilStatus() {
+		return crepo.findAll();
+	}
+
 	
 
 	
