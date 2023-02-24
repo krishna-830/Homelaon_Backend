@@ -1,0 +1,13 @@
+package com.myhomeloan.service;
+
+import com.myhomeloan.model.Enquiry_Details;
+
+public class EnquiryServiceIMPL implements EnquiryService{
+
+	@Override
+	public Enquiry_Details SaveEnquiry(Enquiry_Details enquiry_Details) {
+		
+		return null;
+	}
+
+}
