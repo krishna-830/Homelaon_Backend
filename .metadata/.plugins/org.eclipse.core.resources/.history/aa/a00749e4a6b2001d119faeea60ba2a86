@@ -1,0 +1,15 @@
+package com.myhomeloan.service;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.myhomeloan.model.Enquiry_Details;
+
+public interface EnquiryService {
+
+	Enquiry_Details SaveEnquiry(Enquiry_Details enquiry_details);
+
+
+
+	
+
+}

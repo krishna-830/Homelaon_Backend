@@ -1,0 +1,18 @@
+package com.myhomeloan.service;
+
+import org.springframework.stereotype.Service;
+
+import com.myhomeloan.model.Enquiry_Details;
+
+@Service
+public class EnquiryServiceIMPL implements EnquiryService{
+	
+	
+
+	@Override
+	public Enquiry_Details SaveEnquiry(Enquiry_Details enquiry_Details) {
+		
+		return null;
+	}
+
+}
