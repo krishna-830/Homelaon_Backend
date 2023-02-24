@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.myhomeloan.communication.EnquiryFiegn;
 import com.myhomeloan.model.Cibil;
+import com.myhomeloan.model.Customer;
 import com.myhomeloan.model.Enquiry_Details;
 import com.myhomeloan.repository.CibilRepository;
 import com.myhomeloan.repository.EnquiryRepo;
@@ -75,6 +76,13 @@ public class CibilServiceIMPL implements CibilService {
 	@Override
 	public List<Cibil> getAllCibilStatus() {
 		return crepo.findAll();
+	}
+
+	@Override
+	public List<Customer> getAllCustomer() {
+		
+		 ResponseEntity<List<Customer>> allCustomer = enqproxy.getAllCustomer();
+		return allCustomer.getBody() ;
 	}
 
 	
