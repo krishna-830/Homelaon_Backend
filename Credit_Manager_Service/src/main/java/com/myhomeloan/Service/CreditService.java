@@ -1,7 +1,11 @@
 package com.myhomeloan.Service;
 
+import java.util.List;
+
+import com.myhomeloan.Model.Customer;
 import com.myhomeloan.Model.CustomerVarification;
-import com.myhomeloan.Model.SanctionLatter;
+
+import com.myhomeloan.Model.SanctionLetter;
 
 public interface CreditService {
 
@@ -11,9 +15,11 @@ public interface CreditService {
 
 	String deleteVarification(int varid);
 
-	SanctionLatter createSanctionLatter(SanctionLatter sl);
+	SanctionLetter createSanctionLatter(SanctionLetter sl);
 
-	SanctionLatter getSanctionLetter(int sid);
+	SanctionLetter getSanctionLetter(int sid);
+
+	List<Customer> getAllCustomer();
 
 
 

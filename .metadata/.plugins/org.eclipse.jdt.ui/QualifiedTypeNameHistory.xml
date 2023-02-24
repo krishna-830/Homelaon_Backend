@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
 <fullyQualifiedTypeName name="javax.annotation.Generated"/>
 <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+<fullyQualifiedTypeName name="com.myhomeloan.Model.SanctionLetter"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.OptimisticLocking"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.FeignClient"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.myhomeloan.Model.CustomerVarification"/>
+<fullyQualifiedTypeName name="lombok.extern.apachecommons.CommonsLog"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="com.myhomeloan.Model.Customer"/>
+<fullyQualifiedTypeName name="javax.ws.rs.GET"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 </qualifiedTypeNameHistroy>

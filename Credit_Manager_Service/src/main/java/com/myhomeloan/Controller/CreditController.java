@@ -1,5 +1,7 @@
 package com.myhomeloan.Controller;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,8 +13,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import com.myhomeloan.Model.CustomerVarification;
-import com.myhomeloan.Model.SanctionLatter;
+
+import com.myhomeloan.Model.SanctionLetter;
 import com.myhomeloan.Service.CreditService;
 
 @RestController
@@ -32,8 +36,7 @@ public class CreditController {
 	
 	
 	// GetAll Customer 
-	
-	
+
 
 	@PostMapping("/savevarification")
 	public ResponseEntity<CustomerVarification> saveCustomerVarification(
@@ -60,20 +63,20 @@ public class CreditController {
 	}
 
 	@PostMapping("/createSanction")
-	public ResponseEntity<SanctionLatter> createSanctionletter(@RequestBody SanctionLatter sl) {
+	public ResponseEntity<SanctionLetter> createSanctionletter(@RequestBody SanctionLetter sl) {
 
-		SanctionLatter sanclet = service.createSanctionLatter(sl);
+		SanctionLetter sanclet = service.createSanctionLatter(sl);
 
-		return new ResponseEntity<SanctionLatter>(sanclet, HttpStatus.CREATED);
+		return new ResponseEntity<SanctionLetter>(sanclet, HttpStatus.CREATED);
 
 	}
 
 	@GetMapping("/getSanctionLetter/{sid}")
-	public ResponseEntity<SanctionLatter> getSanctionLetter(@PathVariable int sid) {
+	public ResponseEntity<SanctionLetter> getSanctionLetter(@PathVariable int sid) {
 
-		SanctionLatter sancletter = service.getSanctionLetter(sid);
+		SanctionLetter sancletter = service.getSanctionLetter(sid);
 
-		return new ResponseEntity<SanctionLatter>(sancletter, HttpStatus.FOUND);
+		return new ResponseEntity<SanctionLetter>(sancletter, HttpStatus.FOUND);
 	}
 
 }
