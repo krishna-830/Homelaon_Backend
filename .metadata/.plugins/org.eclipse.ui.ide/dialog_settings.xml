@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+<<<<<<< HEAD
+		<item value="C:\Users\Hp\Desktop\Final_Project\Homelaon_Backend"/>
+=======
+		<item value="C:\Users\vileg\OneDrive\Desktop\Final Project\Homelaon_Backend"/>
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
+		<item value="C:\Users\Harshad\Desktop\Final Project\Homelaon_Backend"/>
 		<item value="C:\Users\soura\Desktop\Final Project\Homelaon_Backend"/>
 	</list>
 	<list key="installedFeatures">
@@ -105,4 +111,12 @@
 		<item value="org.springsource.sts.package:3.9.10.201909190721-RELEASE-e412"/>
 		<item value="org.springsource.sts:3.9.10.201909190721-RELEASE"/>
 	</list>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="380"/>
+		<item key="DIALOG_Y_ORIGIN" value="185"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
 </section>

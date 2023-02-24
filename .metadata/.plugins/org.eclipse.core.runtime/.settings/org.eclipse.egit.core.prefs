@@ -1,7 +1,12 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
 >>>>>>>=3162218738830745f3024b11900faf0d83681121
-GitRepositoriesView.GitDirectories=C\:\\Users\\Dell\\Desktop\\Final Project\\.git;C\:\\Users\\soura\\Desktop\\Final Project\\Homelaon_Backend\\.git;C\:\\Users\\soura\\Desktop\\Final Project\\.git;
-GitRepositoriesView.GitDirectories.relative=C\:\\Users\\Dell\\Desktop\\Final Project\\.git;.git;C\:\\Users\\soura\\Desktop\\Final Project\\.git;
+<<<<<<< HEAD
+GitRepositoriesView.GitDirectories=C\:\\Users\\Hp\\Desktop\\Final_Project\\Homelaon_Backend\\.git;C\:\\Users\\Hp\\Desktop\\Final_Project\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;C\:\\Users\\Hp\\Desktop\\Final_Project\\.git;
+=======
+GitRepositoriesView.GitDirectories=C\:\\Users\\Dell\\Desktop\\Final Project\\.git;C\:\\Users\\vileg\\OneDrive\\Desktop\\Final Project\\.git;C\:\\Users\\vileg\\OneDrive\\Desktop\\Final Project\\Homelaon_Backend\\.git;C\:\\Users\\soura\\Desktop\\Final Project\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Users\\Dell\\Desktop\\Final Project\\.git;C\:\\Users\\vileg\\OneDrive\\Desktop\\Final Project\\.git;.git;C\:\\Users\\soura\\Desktop\\Final Project\\.git;
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
