@@ -4,23 +4,19 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Entity
-public class Cibil {
-
+public class EducationaInfo {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int cibilId;
-	private int cibilScore;
-	private String status;
-	private String remarks;
-	private int eID;
+	   @GeneratedValue(strategy = GenerationType.AUTO)
+	private int eduid;
+	private String utype;
+
 }

@@ -10,17 +10,25 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Entity
-public class Cibil {
-
+public class PreviousLoanBank {
+	
+	private String branchName;
+	private double branchCode;
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int cibilId;
-	private int cibilScore;
+	   @GeneratedValue(strategy = GenerationType.AUTO)
+	private int branchId;
+	private String Branchtype;
+	private String IFSCcode;
+	private String MICRcode;
+	private double ConatctNO;
+	@OneToOne
+	private BankAddress BranchAddress ;
+	private String Email;
 	private String status;
-	private String remarks;
-	private int eID;
+
+
 }

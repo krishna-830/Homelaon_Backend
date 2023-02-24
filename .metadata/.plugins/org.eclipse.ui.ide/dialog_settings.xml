@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+<<<<<<< HEAD
 		<item value="C:\Users\DELL\Desktop\Final Project\Homelaon_Backend"/>
+=======
+<<<<<<< HEAD
+		<item value="C:\Users\Hp\Desktop\Final_Project\Homelaon_Backend"/>
+=======
+		<item value="C:\Users\vileg\OneDrive\Desktop\Final Project\Homelaon_Backend"/>
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
+>>>>>>> bde54530801efac5504b39a25dbbfebb949e7974
 		<item value="C:\Users\Harshad\Desktop\Final Project\Homelaon_Backend"/>
 		<item value="C:\Users\soura\Desktop\Final Project\Homelaon_Backend"/>
 	</list>

@@ -25,5 +25,10 @@
 <item elementID="=Eureka_Server/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Relational_Executive_Service/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
+<<<<<<< HEAD
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1677221905409_2" label="Window Working Set" name="Aggregate for window 1677221905409"/>
+=======
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1677148604394_2" label="Window Working Set" name="Aggregate for window 1677148604394"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1677229714002_3" label="Window Working Set" name="Aggregate for window 1677229714002"/>
+>>>>>>> bde54530801efac5504b39a25dbbfebb949e7974
 </workingSetManager>
