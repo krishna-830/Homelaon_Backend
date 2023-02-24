@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="GitSelectRepositoryPage.lastRepository" value="C:\Users\Hp\Desktop\Final_Project\Homelaon_Backend\.git"/>
 	<section name="org.eclipse.egit.ui.internal.repository.CreateBranchPage$SourceSelectionDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="-7"/>
 		<item key="DIALOG_Y_ORIGIN" value="-110"/>
