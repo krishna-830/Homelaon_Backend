@@ -1,7 +1,5 @@
 package com.myhomeloan.Controller;
 
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+import com.myhomeloan.Model.Customer;
 import com.myhomeloan.Model.CustomerVarification;
 
 import com.myhomeloan.Model.SanctionLetter;
@@ -30,13 +28,18 @@ public class CreditController {
 		return "App Working";
 	}
 
-	
 //I want All Customer For Verification i gate this from OE by feign client and then check verification and send the status
 // Then create the Sanction letter and send to OE 
-	
-	
-	// GetAll Customer 
 
+	// GetAll Customer
+
+	@GetMapping("/savecustomer")
+	public ResponseEntity<String> saveCustomer() {
+
+		String msg = service.saveCustomer();
+		return new ResponseEntity<String>(msg, HttpStatus.ACCEPTED);
+
+	}
 
 	@PostMapping("/savevarification")
 	public ResponseEntity<CustomerVarification> saveCustomerVarification(
@@ -47,7 +50,7 @@ public class CreditController {
 		return new ResponseEntity<CustomerVarification>(cusvarified, HttpStatus.CREATED);
 	}
 
-	//with Some Customer Field
+	// with Some Customer Field
 	@GetMapping("/getVarification/{varId}")
 	public ResponseEntity<CustomerVarification> getVarification(@PathVariable int varId) {
 

@@ -1,14 +1,18 @@
 package com.myhomeloan.ServiceImpl;
 
-import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+
+import com.myhomeloan.Communication.CustomerFiegn;
 import com.myhomeloan.Dao.CreditCustomerRepo;
 import com.myhomeloan.Dao.CreditSanctionRepo;
+import com.myhomeloan.Dao.CustomerRepo;
 import com.myhomeloan.ExceptionHandler.ResourcesNotFoundException;
 import com.myhomeloan.Model.Customer;
 import com.myhomeloan.Model.CustomerVarification;
@@ -22,7 +26,10 @@ public class CreditServiceImpl implements CreditService {
 	private CreditCustomerRepo cusrepo;
 	@Autowired
 	private CreditSanctionRepo sancrepo;
-
+    @Autowired
+	private CustomerFiegn customerproxy;
+    @Autowired
+    private CustomerRepo custrepo;
 	@Override
 	public CustomerVarification savevarification(CustomerVarification customerVarification) {
 
@@ -64,27 +71,40 @@ public class CreditServiceImpl implements CreditService {
 		
 	}
 
-	@Override
-	public List<Customer> getAllCustomer() {
-		CustomerVarification cusvar=new CustomerVarification();
 	
-		List<Customer> clist=new ArrayList<Customer>();
-		//logic for set status
-		for(Customer cuslist:clist)
+
+
+	@Override
+	public String saveCustomer() {
+		ResponseEntity<List<Customer>> entity = customerproxy.getAllCustomer();
+		 List<Customer> clist = entity.getBody();
+		 for(Customer customer :clist)
+		 {
+			 
+			 if(checkCustomer(customer.getEID()))
+			 {
+				 Customer savedcustomer = custrepo.save(customer);
+				 return "Ok";
+			 }
+			 
+			 
+		 }
+		
+		return "Not Ok";
+	}
+
+	private boolean checkCustomer(int eid) {
+		
+		
+		Optional<Customer> id = custrepo.findById(eid);
+		
+		if(id.isPresent())
 		{
-			/*
-			 * if(cuslist.getEID()!=null) {
-			 * 
-			 * cusvar.setStatus("Procc"); }
-			 */
-				
+			return false;
 		}
 		
-		
-		
-		
-		
-		return null;
+		return true;
 	}
+	
 
 }

@@ -1,6 +1,8 @@
 package com.myhomeloan.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
@@ -13,6 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class GuarantorDetails {
 	@Id
+	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int gid;
 	private String gName; 
 	private String gDateofBirth;

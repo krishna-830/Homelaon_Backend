@@ -2,6 +2,8 @@ package com.myhomeloan.Model;
 
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
@@ -15,6 +17,7 @@ import lombok.NoArgsConstructor;
 
 public class LoanDetails {
 	@Id
+	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int loanId;
 	private int loanNo;
 	@OneToOne

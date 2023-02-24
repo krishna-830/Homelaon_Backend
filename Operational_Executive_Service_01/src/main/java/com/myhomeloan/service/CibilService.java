@@ -24,7 +24,7 @@ public interface CibilService {
 
 	List<Cibil> getAllCibilStatus();
 
-    List<Customer> getAllCustomer();
+   List<Customer> getAllCustomer();
 
 	
 

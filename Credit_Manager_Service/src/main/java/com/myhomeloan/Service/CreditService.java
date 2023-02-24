@@ -1,8 +1,6 @@
 package com.myhomeloan.Service;
 
-import java.util.List;
 
-import com.myhomeloan.Model.Customer;
 import com.myhomeloan.Model.CustomerVarification;
 
 import com.myhomeloan.Model.SanctionLetter;
@@ -19,7 +17,9 @@ public interface CreditService {
 
 	SanctionLetter getSanctionLetter(int sid);
 
-	List<Customer> getAllCustomer();
+
+
+	String saveCustomer();
 
 
 

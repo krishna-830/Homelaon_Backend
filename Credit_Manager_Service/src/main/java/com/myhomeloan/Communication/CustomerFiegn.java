@@ -3,6 +3,8 @@ package com.myhomeloan.Communication;
 
 
 
+import java.util.List;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -18,6 +20,6 @@ public interface CustomerFiegn {
 	//get All Customer
 	
 
-	@GetMapping("/")
-	public ResponseEntity<Customer> getAllCustomer();
+	@GetMapping("/customer/getAllCustomer")
+	public ResponseEntity<List<Customer>> getAllCustomer();
 }
