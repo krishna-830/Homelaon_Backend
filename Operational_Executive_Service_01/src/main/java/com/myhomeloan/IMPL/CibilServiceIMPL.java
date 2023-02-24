@@ -1,10 +1,13 @@
 package com.myhomeloan.IMPL;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.myhomeloan.communication.EnquiryFiegn;
 import com.myhomeloan.model.Cibil;
 import com.myhomeloan.model.Enquiry_Details;
 import com.myhomeloan.repository.CibilRepository;
@@ -20,6 +23,9 @@ public class CibilServiceIMPL implements CibilService {
 	
 	@Autowired
 	private EnquiryRepo enrepo;
+	
+	@Autowired
+	private EnquiryFiegn enqproxy;
 	
 	@Override
 	public Cibil checkCibilScore(Cibil cibil) {
@@ -51,13 +57,19 @@ public class CibilServiceIMPL implements CibilService {
 	public boolean checkMyEnquiryByid(int eid) {
 		
 		Optional<Enquiry_Details> enquiry = enrepo.findById(eid);
-		Enquiry_Details en = enquiry.get();
-		if (en!=null) {
+		
+		if (enquiry.isPresent()) {
 			return false;
 		}else
 			
 		return true;
 		
+	}
+
+	@Override
+	public ResponseEntity<List<Enquiry_Details>> getAllEnquiry() {
+		
+		return enqproxy.getAllEnquiry();
 	}
 
 	

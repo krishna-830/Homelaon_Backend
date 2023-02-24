@@ -2,8 +2,12 @@ package com.myhomeloan.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.DoubleStream;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,30 +24,40 @@ public class CibilController {
 	@Autowired
 	private CibilService service;
 	
-	public void setCibilStatus() {
+	@GetMapping("/setCibilStatus")
+	public String setCibilStatus() {
 		
+		ResponseEntity<List<Enquiry_Details>> enqlist=service.getAllEnquiry();
+		System.out.println(enqlist);
+
+		List<Enquiry_Details> listof_Enquiry = enqlist.getBody();
 		
-		Enquiry_Details endet = new Enquiry_Details(1,"Krishna","12",26,"male","krishnawadle",784989,3457984,5894759);
-		List<Enquiry_Details> enqlist=new ArrayList<Enquiry_Details>();
-		 enqlist.add(endet);
-		
-		 for(Enquiry_Details en:enqlist) {
+		 for(Enquiry_Details en:listof_Enquiry) {
 			 
 			 if(checkMyEnquiryByid(en.getEID())) {
 				 
 					Enquiry_Details enquiry= saveEnquiry(en);
 					Cibil c = new Cibil();
-					c.setCibilId(1);
-					c.setCibilScore(678);
+					
+					int min =600;
+					int max =900;
+					
+				
+				
+			int cibilscore=	(int)Math.random()*(max-min+1)+min;
+					
+					
+				
+					c.setCibilScore(cibilscore);
 					c.setStatus("Okay");
 					c.setRemarks("Good");
-					c.setEID(en.getEID());
-					Cibil cibil=saveCibil(c);
+					c.setEID(enquiry.getEID());
+					Cibil cibilsaved=saveCibil(c);
 				 
 			 }else {
 				
 			}	
-		 }	
+		 }	return "ok";
 	}
 	
 	private boolean checkMyEnquiryByid(int eid) {

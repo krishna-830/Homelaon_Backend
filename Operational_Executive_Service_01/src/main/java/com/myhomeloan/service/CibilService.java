@@ -1,5 +1,9 @@
 package com.myhomeloan.service;
 
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+
 import com.myhomeloan.model.Cibil;
 import com.myhomeloan.model.Enquiry_Details;
 
@@ -14,6 +18,8 @@ public interface CibilService {
 	Cibil saveCibil(Cibil c);
 
 	boolean checkMyEnquiryByid(int eid);
+
+	ResponseEntity<List<Enquiry_Details>> getAllEnquiry();
 
 	
 
