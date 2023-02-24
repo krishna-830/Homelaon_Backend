@@ -1,0 +1,10 @@
+package com.myhomeloan.model;
+
+import lombok.Data;
+
+
+public class Enquiry_Details {
+
+
+	
+}
