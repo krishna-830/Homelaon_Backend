@@ -7,4 +7,5 @@
 <aop-project name="Credit_Manager_Service"/>
 <aop-project name="Relational_Executive_Service"/>
 <aop-project name="Config_Server"/>
+<aop-project name="API_Gateway"/>
 </aop-reference-model>

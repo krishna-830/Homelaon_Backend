@@ -67,10 +67,10 @@ public class CibilController {
 		 return new ResponseEntity<>(service.getAllCibilStatus(),HttpStatus.FOUND);
 		 }
 
-	@GetMapping()
+	@GetMapping("/getAllCustomer")
 	public ResponseEntity<List<Customer>> getAllCustomer(){
 		List<Customer> allCustomer = service.getAllCustomer();
-		return new ResponseEntity<List<Customer>>(allCustomer,HttpStatus.FOUND);	
+		return new ResponseEntity<List<Customer>>(allCustomer, HttpStatus.ACCEPTED);
 	}
 		
 	
