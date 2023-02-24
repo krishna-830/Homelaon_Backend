@@ -21,6 +21,8 @@ public interface CibilService {
 
 	ResponseEntity<List<Enquiry_Details>> getAllEnquiry();
 
+	List<Cibil> getAllCibilStatus();
+
 	
 
 }
