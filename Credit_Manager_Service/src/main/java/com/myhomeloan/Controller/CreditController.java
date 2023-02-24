@@ -25,13 +25,15 @@ public class CreditController {
 	public String check() {
 		return "App Working";
 	}
+
+	
+//I want All Customer For Verification i gate this from OE by feign client and then check verification and send the status
+// Then create the Sanction letter and send to OE 
 	
 	
-	@GetMapping("/getAllCustomer")
-	public ResponseEntity<Customer> getAllCustomer()
-	{
-		return new ResponseEntity<Customer>(cus , HttpStatus.FOUND);
-	}
+	// GetAll Customer 
+	
+	
 
 	@PostMapping("/savevarification")
 	public ResponseEntity<CustomerVarification> saveCustomerVarification(
@@ -42,6 +44,7 @@ public class CreditController {
 		return new ResponseEntity<CustomerVarification>(cusvarified, HttpStatus.CREATED);
 	}
 
+	//with Some Customer Field
 	@GetMapping("/getVarification/{varId}")
 	public ResponseEntity<CustomerVarification> getVarification(@PathVariable int varId) {
 
@@ -55,14 +58,22 @@ public class CreditController {
 		return new ResponseEntity<String>(msg, HttpStatus.ACCEPTED);
 
 	}
+
 	@PostMapping("/createSanction")
-	public ResponseEntity<SanctionLatter> createSanctionlatter(@RequestBody SanctionLatter sl)
-	{
-	
-		SanctionLatter   sanclet  = service.createSanctionLatter(sl);
-		
+	public ResponseEntity<SanctionLatter> createSanctionletter(@RequestBody SanctionLatter sl) {
+
+		SanctionLatter sanclet = service.createSanctionLatter(sl);
+
 		return new ResponseEntity<SanctionLatter>(sanclet, HttpStatus.CREATED);
-		
+
+	}
+
+	@GetMapping("/getSanctionLetter/{sid}")
+	public ResponseEntity<SanctionLatter> getSanctionLetter(@PathVariable int sid) {
+
+		SanctionLatter sancletter = service.getSanctionLetter(sid);
+
+		return new ResponseEntity<SanctionLatter>(sancletter, HttpStatus.FOUND);
 	}
 
 }

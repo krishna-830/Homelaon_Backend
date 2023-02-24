@@ -13,6 +13,8 @@ public interface CreditService {
 
 	SanctionLatter createSanctionLatter(SanctionLatter sl);
 
+	SanctionLatter getSanctionLetter(int sid);
+
 
 
 
