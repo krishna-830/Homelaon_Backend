@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.myhomeloan.service.SanctionLetterService;
 
@@ -13,5 +13,8 @@ import com.myhomeloan.service.SanctionLetterService;
 public class SanctionLetterController {
 	@Autowired
 	private SanctionLetterService service;
-	
+	@PostMapping("/saveSanctionLetter")
+	public String saveSanctionLetter() {
+	  	return service.saveSanctionLetter();
+	}
 }
