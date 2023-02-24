@@ -1,5 +1,7 @@
 package com.myhomeloan.Controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -74,12 +76,12 @@ public class CreditController {
 
 	}
 
-	@GetMapping("/getSanctionLetter/{sid}")
-	public ResponseEntity<SanctionLetter> getSanctionLetter(@PathVariable int sid) {
+	@GetMapping("/getAllSanctionLetter")
+	public ResponseEntity<List<SanctionLetter>> getSanctionLetter() {
 
-		SanctionLetter sancletter = service.getSanctionLetter(sid);
+	   List<SanctionLetter> list = service.getSanctionLetter();
 
-		return new ResponseEntity<SanctionLetter>(sancletter, HttpStatus.FOUND);
+		return new ResponseEntity<List<SanctionLetter>>(list, HttpStatus.ACCEPTED);
 	}
 
 }
