@@ -867,15 +867,25 @@ java.net.UnknownHostException: spring.io
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+<<<<<<< HEAD
 !SESSION 2023-02-24 12:20:58.708 -----------------------------------------------
 eclipse.buildId=3.9.10.201909190721-RELEASE-e412
 java.version=1.8.0_321
+=======
+!SESSION 2023-02-24 11:39:18.653 -----------------------------------------------
+eclipse.buildId=3.9.10.201909190721-RELEASE-e412
+java.version=1.8.0_241
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
 Framework arguments:  -product org.springsource.sts.ide
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.m2e.logback.configuration 2 0 2023-02-24 12:21:17.586
+=======
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2023-02-24 11:39:28.658
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
 !MESSAGE Exception while setting up logging:Problem parsing XML document. See previously reported errors.
 !STACK 0
 ch.qos.logback.core.joran.spi.JoranException: Problem parsing XML document. See previously reported errors.
@@ -896,18 +906,31 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 43; columnNumber: 2; The c
 	at ch.qos.logback.core.joran.event.SaxEventRecorder.recordEvents(SaxEventRecorder.java:61)
 	... 9 more
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.core 1 0 2023-02-24 12:21:19.949
 !MESSAGE Using Apache MINA sshd as ssh client.
 
 !ENTRY org.eclipse.jface 2 0 2023-02-24 12:21:21.491
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2023-02-24 12:21:21.491
+=======
+!ENTRY org.eclipse.egit.core 1 0 2023-02-24 11:39:31.020
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2023-02-24 11:39:33.001
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-24 11:39:33.001
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@70ab1ce0,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6de4071b,
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -915,18 +938,29 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@50d6af87,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7077ae9c,
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2023-02-24 12:21:30.109
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\Hp'. If this is
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2023-02-24 11:39:42.573
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vileg'. If this is
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.core.jobs 4 2 2023-02-24 12:21:45.528
 !MESSAGE An internal error occurred during: "reload maven project".
 !STACK 0
@@ -1554,6 +1588,9 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/Relational_Ex
 !MESSAGE Cannot determine URI for '/Relational_Executive_Service/src/main/resources/application.properties'.
 
 !ENTRY org.springframework.ide.eclipse.beans.core 1 0 2023-02-24 12:23:31.224
+=======
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2023-02-24 11:41:21.331
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
 !MESSAGE Error occured processing 'com.myhomelaonapp.AdminServiceApplication'
 !STACK 0
 org.springframework.core.annotation.AnnotationConfigurationException: Attribute 'proxyBeanMethods' in annotation [org.springframework.boot.SpringBootConfiguration] is declared as an @AliasFor nonexistent attribute 'proxyBeanMethods' in annotation [org.springframework.context.annotation.Configuration].; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
@@ -1585,7 +1622,11 @@ Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotati
 	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
 	... 22 more
 
+<<<<<<< HEAD
 !ENTRY org.springframework.ide.eclipse.beans.core 1 0 2023-02-24 12:23:31.881
+=======
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2023-02-24 11:41:25.394
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
 !MESSAGE Error occured processing 'com.myhomelaonapp.ConfigServerApplication'
 !STACK 0
 org.springframework.core.annotation.AnnotationConfigurationException: Attribute 'proxyBeanMethods' in annotation [org.springframework.boot.SpringBootConfiguration] is declared as an @AliasFor nonexistent attribute 'proxyBeanMethods' in annotation [org.springframework.context.annotation.Configuration].; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
@@ -1616,6 +1657,7 @@ Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotati
 	at java.lang.Class.getDeclaredMethod(Unknown Source)
 	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
 	... 22 more
+<<<<<<< HEAD
 
 !ENTRY org.springframework.ide.eclipse.beans.core 1 0 2023-02-24 12:23:36.956
 !MESSAGE Error occured processing 'com.myhomeloan.OperationalExecutiveServiceApplication'
@@ -1747,3 +1789,5 @@ Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotati
 	at java.lang.Class.getDeclaredMethod(Unknown Source)
 	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
 	... 22 more
+=======
+>>>>>>> ccebeb3429d58bb8ffde6ada0cf314a04d942bcf
