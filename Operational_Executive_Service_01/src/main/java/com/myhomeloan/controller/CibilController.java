@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.myhomeloan.model.Cibil;
+import com.myhomeloan.model.Customer;
 import com.myhomeloan.model.Enquiry_Details;
 import com.myhomeloan.service.CibilService;
 
@@ -66,4 +67,11 @@ public class CibilController {
 		 return new ResponseEntity<>(service.getAllCibilStatus(),HttpStatus.FOUND);
 		 }
 
+	@GetMapping("/getAllCustomer")
+	public ResponseEntity<List<Customer>> getAllCustomer(){
+		List<Customer> allCustomer = service.getAllCustomer();
+		return new ResponseEntity<List<Customer>>(allCustomer, HttpStatus.ACCEPTED);
+	}
+		
+	
 }
