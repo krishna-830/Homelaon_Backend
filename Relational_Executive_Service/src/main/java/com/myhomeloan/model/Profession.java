@@ -2,6 +2,8 @@ package com.myhomeloan.model;
 
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
@@ -15,6 +17,7 @@ import lombok.NoArgsConstructor;
 public class Profession {
 
 	@Id
+	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int pid;
 	private String ptype;
 	private double psalary;
