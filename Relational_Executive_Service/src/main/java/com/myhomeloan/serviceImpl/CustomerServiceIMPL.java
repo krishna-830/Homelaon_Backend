@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.myhomeloan.ExceptionHandler.ResourceNotFoundException;
 import com.myhomeloan.Repository.CustomerRepository;
+import com.myhomeloan.model.Cibil;
 import com.myhomeloan.model.Customer;
 import com.myhomeloan.service.CustomerService;
 @Service
@@ -42,6 +43,12 @@ public class CustomerServiceIMPL implements CustomerService {
 	public Customer updateCustomer(Customer customer) {
 	
 		return customerRepo.save(customer);
+	}
+
+	@Override
+	public List<Cibil> getallCibil() {
+	
+		return ;
 	}
 
 }
