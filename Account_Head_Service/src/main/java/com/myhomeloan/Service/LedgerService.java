@@ -11,4 +11,6 @@ public interface LedgerService {
 
 	List<SanctionLetter> getAllSantionLetter();
 
+	List<Ledger> getAllLedger();
+
 }
