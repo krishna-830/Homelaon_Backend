@@ -64,11 +64,8 @@ public class CreditServiceImpl implements CreditService {
 	}
 
 	@Override
-	public SanctionLetter getSanctionLetter(int sid) {
-		return sancrepo.findById(sid).orElseThrow(()-> new ResourcesNotFoundException("No sanctionletter found with this id."));
-		
-		
-		
+	public List<SanctionLetter> getSanctionLetter() {
+		return sancrepo.findAll();
 	}
 
 	
