@@ -20,7 +20,7 @@ public class AccountDetails {
 	private String branchName;
     private double branchCode;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+   // @GeneratedValue(strategy = GenerationType.AUTO)
     private int branchId;
     private String ifsc;
     private String micrCode;

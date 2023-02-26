@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class AllPersonalDocs {
 	
 	@Id
-	   @GeneratedValue(strategy = GenerationType.AUTO)
+	//   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int documentID;
 	private byte[] addressproof;
 	private byte[] pancard;

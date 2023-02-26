@@ -19,7 +19,7 @@ public class PreviousLoanBank {
 	private String branchName;
 	private double branchCode;
 	@Id
-	   @GeneratedValue(strategy = GenerationType.AUTO)
+	 //  @GeneratedValue(strategy = GenerationType.AUTO)
 	private int branchId;
 	private String Branchtype;
 	private String IFSCcode;

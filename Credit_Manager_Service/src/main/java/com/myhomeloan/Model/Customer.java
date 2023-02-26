@@ -19,7 +19,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Customer {
 	@Id
-	   @GeneratedValue(strategy = GenerationType.AUTO)
+//	   @GeneratedValue(strategy = GenerationType.AUTO)
+	
 	private int eID;
 	private String Name;
 	private String DOB;
