@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class BankAddress {
 
 	@Id
-	   @GeneratedValue(strategy = GenerationType.AUTO)
+//	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int aid;
 	private String cityname;
 	private String areaname;

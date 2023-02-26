@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PreviousLoan {
 	@Id
-	   @GeneratedValue(strategy = GenerationType.AUTO)
+	//   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int ploanId;
 	private double ploanAmount;
 	private int pTenure;
