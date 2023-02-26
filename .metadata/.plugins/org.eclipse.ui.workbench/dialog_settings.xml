@@ -3,7 +3,11 @@
 	<section name="ImportExportAction">
 		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.e4.ui.importer.wizard"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+<<<<<<< HEAD
 			<item value="org.eclipse.ui.Basic"/>
+=======
+			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
+>>>>>>> 2cf003334f264d9c6bd6e3a1d46673707689d9f2
 		</list>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
@@ -17,5 +21,7 @@
 		</list>
 		<list key="textArray">
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>
