@@ -75,7 +75,8 @@ public class CreditServiceImpl implements CreditService {
 	public String saveCustomer() {
 		ResponseEntity<List<Customer>> entity = customerproxy.getAllCustomer();
 		 List<Customer> clist = entity.getBody();
-		 for(Customer customer :clist)
+		
+		  for(Customer customer :clist)
 		 {
 			 
 			 if(checkCustomer(customer.getEID()))
