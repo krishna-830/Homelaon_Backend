@@ -32,5 +32,6 @@ public class SanctionLetter {
     private String remarks;
 	private String termsandCondition;
 	private String status;
+	private String email;
 
 }

@@ -1,105 +1,8 @@
-<<<<<<< HEAD
 INDEX VERSION 1.131+C:\Users\soura\Desktop\Final Project\Homelaon_Backend\.metadata\.plugins\org.eclipse.jdt.core
 3517260194.index
 2769860164.index
 3840220871.index
 3461034750.index
-=======
-<<<<<<< HEAD
-INDEX VERSION 1.131+C:\Users\acer\OneDrive\Desktop\Final Project\Homelaon_Backend\.metadata\.plugins\org.eclipse.jdt.core
-2277305314.index
-975946674.index
-1045045546.index
-1273991682.index
-3113898243.index
-2993638854.index
-4213363879.index
-2351023813.index
-1855120987.index
-427694262.index
-746454597.index
-2229224955.index
-3930456647.index
-1427971052.index
-4184543772.index
-3055294799.index
-1070045956.index
-1249255314.index
-533131141.index
-296115681.index
-1177577981.index
-421891434.index
-2551016711.index
-971438434.index
-112709836.index
-2533355058.index
-4097120088.index
-3465643030.index
-1752731424.index
-1842866080.index
-2199624269.index
-2789028838.index
-2987631640.index
-4153043474.index
-2320699335.index
-482490852.index
-3777312901.index
-958171944.index
-630272824.index
-3961189641.index
-3034846199.index
-2903331942.index
-3729703180.index
-2095660242.index
-2981093079.index
-1416560174.index
-646989234.index
-469329276.index
-3760915941.index
-3399044921.index
-2908823458.index
-1521326362.index
-2252078306.index
-2373525301.index
-1257853905.index
-1318331920.index
-569841344.index
-3138914332.index
-2858910796.index
-3200024480.index
-988293364.index
-356650433.index
-2254836481.index
-3604465610.index
-2622341623.index
-690115900.index
-379992248.index
-=======
-INDEX VERSION 1.131+C:\Users\DELL\Desktop\Final Project\Homelaon_Backend\.metadata\.plugins\org.eclipse.jdt.core
-1905236.index
-979038611.index
-3944832119.index
-2947059279.index
-592674091.index
-1558756538.index
-2188239710.index
-2505907589.index
-3729703180.index
-775533993.index
-710808966.index
-1254077484.index
-1759400051.index
-419130671.index
-1521484680.index
-712147672.index
-3209108121.index
-3183027001.index
-4000556712.index
-1416560174.index
-2640231857.index
-2563605683.index
-3736658666.index
->>>>>>> 3c9a9c342f8f9e8d6b905aba7d51563a97083449
 690115900.index
 244728054.index
 1599614013.index
@@ -139,7 +42,6 @@ INDEX VERSION 1.131+C:\Users\DELL\Desktop\Final Project\Homelaon_Backend\.metada
 2623517180.index
 2004698561.index
 1273991682.index
-<<<<<<< HEAD
 3035254263.index
 3729703180.index
 1384307079.index
@@ -162,8 +64,3 @@ INDEX VERSION 1.131+C:\Users\DELL\Desktop\Final Project\Homelaon_Backend\.metada
 4257112082.index
 2188432394.index
 3567350538.index
-=======
-1870490701.index
-3017744854.index
->>>>>>> 950345a147bc0a0d05e59ae15224d0f5d11710fc
->>>>>>> 3c9a9c342f8f9e8d6b905aba7d51563a97083449
