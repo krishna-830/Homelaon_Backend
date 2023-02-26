@@ -43,6 +43,12 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
 <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<<<<<<< HEAD
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="javax.annotation.Generated"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+=======
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.myhomeloan.model.Ledger"/>
+>>>>>>> 126c807d3fee4e842e151c6c8db9847fe3b613f0
 </qualifiedTypeNameHistroy>

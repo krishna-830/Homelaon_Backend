@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class Enquiry_Details {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	//@GeneratedValue(strategy = GenerationType.AUTO)
 	private int eID;
 	private String name;
 	private String DOB;

@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class SanctionLetter {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	//@GeneratedValue(strategy = GenerationType.AUTO)
 	private int sid;
 
 	private String sanctionDate;
