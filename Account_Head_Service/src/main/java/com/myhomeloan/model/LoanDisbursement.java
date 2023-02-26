@@ -17,17 +17,17 @@ public class LoanDisbursement {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int agrrmentid;
-	private int loannumber;
-	private String agrrdate;
-	private String ammoutpaytype;
-	private double totalammout;
-	private String bankname;
-	private double aacountnumber;
-	private String ifsccode;
-	private String accounttype;
-	private double transferammout;
-	private String paymentstatus;
-	private String ammoutpaydate;
+	private int agreementId;
+	private int loanNo;
+	private String agreementDate;
+	private String amountPayType;
+	private double totalAmount;
+	private String bankName;
+	private double accountNumber;
+	private String IFSCCode;
+	private String accountType;
+	private double transferAmount;
+	private String paymentStatus;
+	private String amountPaidDate;
 	
 }
