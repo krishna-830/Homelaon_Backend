@@ -37,6 +37,7 @@ public class LedgerServiceIMPL implements LedgerService {
 
 		ArrayList<SanctionLetter> list = new ArrayList<SanctionLetter>();
 
+
 		for (SanctionLetter letter : list) {
 
 			if (checkSanctionLetterBySid(letter.getSid())) {

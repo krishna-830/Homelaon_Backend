@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
-<<<<<<< HEAD
 		<item value="C:\Users\vileg\OneDrive\Desktop\Final Project\Homelaon_Backend"/>
 	</list>
 	<list key="installedFeatures">
@@ -106,8 +105,4 @@
 		<item value="org.springsource.sts.package:3.9.10.201909190721-RELEASE-e412"/>
 		<item value="org.springsource.sts:3.9.10.201909190721-RELEASE"/>
 	</list>
-=======
-		<item value="C:\Users\DELL\Desktop\Final Project\Homelaon_Backend"/>
-	</list>
->>>>>>> 2cf003334f264d9c6bd6e3a1d46673707689d9f2
 </section>
