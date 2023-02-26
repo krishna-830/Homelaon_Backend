@@ -18,20 +18,20 @@ public class Ledger {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int ledgerid;
-	private String ledgercreateddate;
-	private double totalloanamout;
-	private double payableammoutwithinterest;
+	private int ledgerId;
+	private String ledgerCreatedDate;
+	private double totalLoanAmount;
+	private double payableAmountwithInterest;
 	private int tenure;
-	private double monthlyemi;
-	private double ammoutpaidtilldate;
-	private double remainingammout;
-	private String nextemidatestart;
-	private String nextemidateend;
-	private int defaultercount;
-	private String previousemistatus;
-	private String currentmonthemistatus;
-	private String loanendate;
-	private String loanstatus;
+	private double monthlyEMI;
+	private double amountPaidtillDate;
+	private double remainingAmount;
+	private String nextEmiDatestart;
+	private String nextEmiDateEnd;
+	private int defaulterCount;
+	private String previousEmiStatus;
+	private String currentMonthEmiStatus;
+	private String loanEnDate;
+	private String loanStatus;
 	
 }
