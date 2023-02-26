@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.myhomeloan.Communication.CreditManagerProxy;
@@ -25,20 +26,33 @@ public class LedgerServiceIMPL implements LedgerService {
 
 	@Autowired
 	private CreditManagerProxy cmproxy;
+	
 
 	@Override
 	public Ledger createLedger(Ledger ledger) {
 
 		return ldao.save(ledger);
 	}
+	
+	@Override
+	public List<Ledger> getAllLedger() {
+		  
+		return ldao.findAll();
+	}
+
 
 	@Override
 	public List<SanctionLetter> getAllSantionLetter() {
 
-		ArrayList<SanctionLetter> list = new ArrayList<SanctionLetter>();
+		ResponseEntity<List<SanctionLetter>> sanctionLetter = cmproxy.getSanctionLetter();
+		List<SanctionLetter> sanclist = sanctionLetter.getBody();
 
+<<<<<<< HEAD
 
 		for (SanctionLetter letter : list) {
+=======
+		for (SanctionLetter letter : sanclist) {
+>>>>>>> 126c807d3fee4e842e151c6c8db9847fe3b613f0
 
 			if (checkSanctionLetterBySid(letter.getSid())) {
 			
@@ -76,7 +90,8 @@ public class LedgerServiceIMPL implements LedgerService {
 
 	private SanctionLetter saveSantionLetter(SanctionLetter letter) {
 
-		return null;
+		return sanDao.save(letter);
 	}
 
+	
 }
