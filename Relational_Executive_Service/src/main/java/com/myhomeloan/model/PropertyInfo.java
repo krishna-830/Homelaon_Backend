@@ -25,8 +25,7 @@ public class PropertyInfo {
 	private String constructionArea;
 	private double propertyprice;
 	private double constructionprice;
-	private byte[] propertyDocuments;
-	private byte[] priceProofs;
+	
 	@OneToOne
 	private propertyAddress propertyAddress;
 }

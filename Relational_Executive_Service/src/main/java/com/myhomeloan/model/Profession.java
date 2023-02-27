@@ -24,6 +24,10 @@ public class Profession {
 	private String psalarytype;
 	private String pworkingperiod;
 	private String pDesignation;
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 5567ee990f555994b9468c2d2034a44b642e2906
 
 }

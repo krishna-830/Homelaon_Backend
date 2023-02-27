@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EMIDetails {
 	@Id
-	   @GeneratedValue(strategy = GenerationType.AUTO)
+	//   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int emiID;
 	private double emiAmountMonthly;
 	private String nextEmiDueDate;
