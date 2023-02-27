@@ -24,6 +24,6 @@ public class Profession {
 	private String psalarytype;
 	private String pworkingperiod;
 	private String pDesignation;
-	private byte[] psalaryslips;
+	
 
 }

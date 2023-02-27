@@ -8,9 +8,6 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-<fullyQualifiedTypeName name="lombok.Data"/>
-<fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
-<fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
@@ -20,8 +17,6 @@
 <fullyQualifiedTypeName name="com.myhomeloan.Dao.LedgerDao"/>
 <fullyQualifiedTypeName name="com.myhomeloan.Service.LoanDisbursementService"/>
 <fullyQualifiedTypeName name="com.myhomeloan.Dao.LoanDisbursementDao"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.FeignClient"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.persistence.criteria.CriteriaBuilder.In"/>
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
@@ -32,11 +27,9 @@
 <fullyQualifiedTypeName name="com.myhomeloan.Dao.SantionDao"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
 <fullyQualifiedTypeName name="com.netflix.discovery.converters.Auto"/>
 <fullyQualifiedTypeName name="com.ctc.wstx.shaded.msv_core.datatype.xsd.Proxy"/>
 <fullyQualifiedTypeName name="com.myhomeloan.Communication.CreditManagerProxy"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.myhomeloan.model.SanctionLetter"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 <fullyQualifiedTypeName name="com.myhomeloan.model.LoanDisbursement"/>
@@ -45,4 +38,26 @@
 <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.myhomeloan.model.Ledger"/>
+<fullyQualifiedTypeName name="lombok.Data"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
+<fullyQualifiedTypeName name="javax.persistence.Basic"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.modelmapper.ModelMapper"/>
+<fullyQualifiedTypeName name="com.myhomeloan.dto.CustomerDTO"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestPart"/>
+<fullyQualifiedTypeName name="javax.mail.Multipart"/>
+<fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.myhomeloan.model.AllPersonalDocs"/>
+<fullyQualifiedTypeName name="com.myhomeloan.model.Customer"/>
+<fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+<fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.FeignClient"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseStatus"/>
+<fullyQualifiedTypeName name="com.myhomeloan.Repository.EnquiryRepository"/>
+<fullyQualifiedTypeName name="com.myhomeloan.ExceptionHandler.ResourceNotFoundException"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.myhomeloan.Repository.CustomerRepository"/>
 </qualifiedTypeNameHistroy>

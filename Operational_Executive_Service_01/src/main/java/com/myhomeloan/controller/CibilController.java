@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.myhomeloan.model.Cibil;
@@ -16,7 +17,7 @@ import com.myhomeloan.service.CibilService;
 
 
 @RestController
-@RequestMapping("/Ope_Api")
+@RequestMapping("/Ope-Api")
 public class CibilController {
     
 	
@@ -61,10 +62,21 @@ public class CibilController {
 		
 	}
 
+	@ResponseStatus
 	@GetMapping("/getAllCibilStatus")
 	 public ResponseEntity<List<Cibil>> getAllCibilStatus(){
-		   
-		 return new ResponseEntity<>(service.getAllCibilStatus(),HttpStatus.FOUND);
+		List<Cibil> allCibilStatus = service.getAllCibilStatus();
+		System.out.println(allCibilStatus);
+		 return new ResponseEntity<>(allCibilStatus,HttpStatus.FOUND);
+		 }
+	
+	
+	@GetMapping("/getAllCibilStatuses")
+	 public List<Cibil> getAllCibilStatuses(){
+		System.out.println("inside getAllCibilStatuses");
+		List<Cibil> allCibilStatus = service.getAllCibilStatuses();
+		System.out.println(allCibilStatus);
+		 return allCibilStatus;
 		 }
 
 	@GetMapping("/getAllCustomer")

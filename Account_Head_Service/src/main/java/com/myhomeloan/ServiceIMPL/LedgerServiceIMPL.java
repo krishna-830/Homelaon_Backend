@@ -1,6 +1,6 @@
 package com.myhomeloan.ServiceIMPL;
 
-import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -47,12 +47,12 @@ public class LedgerServiceIMPL implements LedgerService {
 		ResponseEntity<List<SanctionLetter>> sanctionLetter = cmproxy.getSanctionLetter();
 		List<SanctionLetter> sanclist = sanctionLetter.getBody();
 
-<<<<<<< HEAD
 
-		for (SanctionLetter letter : list) {
-=======
+
+		
+
 		for (SanctionLetter letter : sanclist) {
->>>>>>> 126c807d3fee4e842e151c6c8db9847fe3b613f0
+
 
 			if (checkSanctionLetterBySid(letter.getSid())) {
 			

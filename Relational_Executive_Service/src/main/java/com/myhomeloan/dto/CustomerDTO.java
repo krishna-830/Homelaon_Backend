@@ -1,26 +1,27 @@
-package com.myhomeloan.model;
+package com.myhomeloan.dto;
 
-import javax.jws.Oneway;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+
+import com.myhomeloan.model.AccountDetails;
+import com.myhomeloan.model.Cibil;
+import com.myhomeloan.model.CustomerAddress;
+import com.myhomeloan.model.EducationaInfo;
+import com.myhomeloan.model.GuarantorDetails;
+import com.myhomeloan.model.LoanDetails;
+import com.myhomeloan.model.PreviousLoan;
+import com.myhomeloan.model.Profession;
+import com.myhomeloan.model.PropertyInfo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Customer {
-	@Id
+public class CustomerDTO {
+
 	private int eID;
-	private String name;
+	private String Name;
 	private String DOB;
 	private int Age;
 	private String Gender;
@@ -30,34 +31,24 @@ public class Customer {
     private double cAmountPaidforHome;
     private double cToltalLoanRequired;
     
-    @OneToOne
-    private EducationaInfo cEducationalInfo;
-    @OneToOne
-    private AllPersonalDocs cAllPersonalDocs;
-    @OneToOne
+    
     private CustomerAddress cAddress;
-    @OneToOne
+    
     private Profession cProfession;
-    @OneToOne
+    
     private Cibil ccbil;
-    @OneToOne
+    
     private LoanDetails cLoanDetails;
-    @OneToOne
+    
     private PreviousLoan cPreviousLoan;
-    @OneToOne
+    
     private AccountDetails cAccountDetails;
-    @OneToOne
+    
     private PropertyInfo cPropertyInfo;
-    @OneToOne
+   
     private GuarantorDetails cGuarantorDetails;
-    
 
-    
-    
-    
-    
-    
-	
-	
+    private EducationaInfo cEducationalInfo;
+
 
 }

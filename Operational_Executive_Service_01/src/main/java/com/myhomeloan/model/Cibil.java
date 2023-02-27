@@ -23,4 +23,5 @@ public class Cibil {
 	private String status;
 	private String remarks;
 	private int eID;
+
 }
