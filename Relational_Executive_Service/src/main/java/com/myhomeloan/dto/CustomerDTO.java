@@ -31,24 +31,24 @@ public class CustomerDTO {
     private double cAmountPaidforHome;
     private double cToltalLoanRequired;
     
-    
-    private CustomerAddress cAddress;
-    
-    private Profession cProfession;
-    
-    private Cibil ccbil;
-    
-    private LoanDetails cLoanDetails;
-    
-    private PreviousLoan cPreviousLoan;
-    
-    private AccountDetails cAccountDetails;
-    
-    private PropertyInfo cPropertyInfo;
-   
-    private GuarantorDetails cGuarantorDetails;
+//    
+//    private CustomerAddress cAddress;
+//    
+//    private Profession cProfession;
+//    
+//    private Cibil ccbil;
+//    
+//    private LoanDetails cLoanDetails;
+//    
+//    private PreviousLoan cPreviousLoan;
+//    
+//    private AccountDetails cAccountDetails;
+//    
+//    private PropertyInfo cPropertyInfo;
+//   
+//    private GuarantorDetails cGuarantorDetails;
+//
+//    private EducationaInfo cEducationalInfo;
 
-    private EducationaInfo cEducationalInfo;
-
-
+/**/
 }

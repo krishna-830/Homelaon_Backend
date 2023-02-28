@@ -1,5 +1,6 @@
 package com.myhomeloan.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 
 import javax.persistence.Id;
@@ -16,10 +17,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Customer {
 	@Id
-<<<<<<< HEAD
-=======
 
->>>>>>> 5567ee990f555994b9468c2d2034a44b642e2906
 	private int eID;
 	private String name;
 	private String DOB;
@@ -31,25 +29,25 @@ public class Customer {
 	private double cAmountPaidforHome;
 	private double cToltalLoanRequired;
 
-	@OneToOne
-	private EducationaInfo cEducationalInfo;
-	@OneToOne
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private EducationaInfo cEducationalInfo;
+	@OneToOne(cascade = CascadeType.ALL)
 	private AllPersonalDocs cAllPersonalDocs;
-	@OneToOne
-	private CustomerAddress cAddress;
-	@OneToOne
-	private Profession cProfession;
-	@OneToOne
-	private Cibil ccbil;
-	@OneToOne
-	private LoanDetails cLoanDetails;
-	@OneToOne
-	private PreviousLoan cPreviousLoan;
-	@OneToOne
-	private AccountDetails cAccountDetails;
-	@OneToOne
-	private PropertyInfo cPropertyInfo;
-	@OneToOne
-	private GuarantorDetails cGuarantorDetails;
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private CustomerAddress cAddress;
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private Profession cProfession;
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private Cibil ccbil;
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private LoanDetails cLoanDetails;
+//	@OneToOne(cascade =CascadeType.ALL)
+//	private PreviousLoan cPreviousLoan;
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private AccountDetails cAccountDetails;
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private PropertyInfo cPropertyInfo;
+//	@OneToOne(cascade = CascadeType.ALL)
+//	private GuarantorDetails cGuarantorDetails;
 
 }

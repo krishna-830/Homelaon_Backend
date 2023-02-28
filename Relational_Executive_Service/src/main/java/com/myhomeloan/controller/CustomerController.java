@@ -64,7 +64,7 @@ public class CustomerController {
 			doc.setSalaryslips(salaryslips.getBytes());
 			doc.setSignature(signature.getBytes());
 			 customer = customerService.findByEID(eID);
-			customer.setCAllPersonalDocs(doc);
+			//customer.setCAllPersonalDocs(doc);
 		} catch (Exception e) {
 			
 		}

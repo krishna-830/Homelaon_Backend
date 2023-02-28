@@ -1,5 +1,6 @@
 package com.myhomeloan.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,7 +26,7 @@ public class PreviousLoanBank {
 	private String IFSCcode;
 	private String MICRcode;
 	private double ConatctNO;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private BankAddress BranchAddress ;
 	private String Email;
 	private String status;

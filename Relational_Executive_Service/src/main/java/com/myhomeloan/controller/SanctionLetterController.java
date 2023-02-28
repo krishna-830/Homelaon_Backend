@@ -17,7 +17,7 @@ public class SanctionLetterController {
 	@Autowired
 	private SanctionLetterService service;
 	
-	@PostMapping("/saveSanctionLetter")
+	@GetMapping("/saveSanctionLetter")
 	public String saveSanctionLetter() {
 	  	return service.saveSanctionLetter();
 	}

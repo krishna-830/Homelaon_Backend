@@ -9,7 +9,7 @@ public interface LedgerService {
 
 	Ledger createLedger(Ledger ledger);
 
-	List<SanctionLetter> getAllSantionLetter();
+	List<Ledger> getAllSantionLetter();
 
 	List<Ledger> getAllLedger();
 
