@@ -2,6 +2,7 @@ package com.myhomeloan.model;
 
 
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,9 +22,9 @@ public class CustomerAddress {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int addressid;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private permanent permanent;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private local local;
 
 }

@@ -20,6 +20,6 @@ public interface CustomerFiegn {
 	//get All Customer
 	
 
-	@GetMapping("/customer/getAllCustomer")
+	@GetMapping("/Ope-Api/getAllCustomer")
 	public ResponseEntity<List<Customer>> getAllCustomer();
 }

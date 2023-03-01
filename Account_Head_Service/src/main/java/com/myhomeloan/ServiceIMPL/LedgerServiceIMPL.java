@@ -1,6 +1,8 @@
 package com.myhomeloan.ServiceIMPL;
 
-import java.util.ArrayList;
+
+import java.time.LocalDate;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -42,22 +44,30 @@ public class LedgerServiceIMPL implements LedgerService {
 
 
 	@Override
-	public List<SanctionLetter> getAllSantionLetter() {
+	public List<Ledger> getAllSantionLetter() {
 
 		ResponseEntity<List<SanctionLetter>> sanctionLetter = cmproxy.getSanctionLetter();
 		List<SanctionLetter> sanclist = sanctionLetter.getBody();
 
+
+
+		
+
 		for (SanctionLetter letter : sanclist) {
+
 
 			if (checkSanctionLetterBySid(letter.getSid())) {
 			
-				SanctionLetter savedletter = saveSantionLetter(letter);
+				SanctionLetter sl = saveSantionLetter(letter);
 				
 				Ledger led = new Ledger();
 				
-				
-				
+				led.setLedgerCreatedDate("23-02-2023");
+				led.setTotalLoanAmount(sl.getLoanAmtSanctioned());
+				led.setPayableAmountwithInterest(sl.getLoanAmtSanctioned()+sl.getLoanAmtSanctioned()*1.35);
+				led.setMonthlyEMI(5500);
 				Ledger ledgersaved = ldao.save(led);
+				
 				
 				
 			}else {
@@ -68,7 +78,7 @@ public class LedgerServiceIMPL implements LedgerService {
 
 		}
 
-		return null;
+		return getAllLedger();
 	}
 
 	private boolean checkSanctionLetterBySid(int sid) {

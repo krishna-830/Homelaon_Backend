@@ -1,6 +1,7 @@
 package com.myhomeloan.model;
 
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,7 +24,7 @@ public class PreviousLoan {
 	private double paidAmount;
 	private double remainingAmount;
 	private int deafulterCount;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private PreviousLoanBank pbankDetails;
 	private String status;
 	private String remark;

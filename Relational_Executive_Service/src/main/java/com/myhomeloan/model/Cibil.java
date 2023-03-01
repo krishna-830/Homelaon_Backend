@@ -10,18 +10,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
 public class Cibil {
 	@Id
-	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int cibilId;
 	private int cibilScore;
-	
 	private String status;
-	private String remark;
-    private int eID;
+	private String remarks;
+	private int eID;
 
 }

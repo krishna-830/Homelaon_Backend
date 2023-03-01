@@ -1,5 +1,6 @@
 package com.myhomelaonapp.Model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,9 +25,9 @@ public class Employee {
 	private String username;
 	private String password;
 	private String status;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private Address address;
-	@OneToOne
+	@OneToOne(cascade =CascadeType.ALL)
 	private EmployeeBankDetails bankdetails;
 	
 }

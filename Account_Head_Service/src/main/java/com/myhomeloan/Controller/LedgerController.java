@@ -17,18 +17,18 @@ import com.myhomeloan.model.Ledger;
 import com.myhomeloan.model.SanctionLetter;
 
 @RestController
-@RequestMapping("/accounthead-api")
+@RequestMapping("/ac-api")
 public class LedgerController {
 
 	@Autowired
 	private LedgerService service;
 
 	@GetMapping("/getAllSantionLetter")
-	public ResponseEntity<List<SanctionLetter>> getAllSantionLetter() {
+	public ResponseEntity<List<Ledger>> getAllSantionLetter() {
 
-		List<SanctionLetter> slist = service.getAllSantionLetter();
+		List<Ledger> allLedger = service.getAllSantionLetter();
 
-		return ResponseEntity.status(HttpStatus.OK).body(slist);
+		return ResponseEntity.status(HttpStatus.OK).body(allLedger);
 	}
 
 	@PostMapping("/createLedger")

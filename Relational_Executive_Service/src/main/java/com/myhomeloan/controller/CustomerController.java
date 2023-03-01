@@ -2,6 +2,8 @@ package com.myhomeloan.controller;
 
 import java.util.List;
 
+import javax.mail.Multipart;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.openfeign.support.ResponseEntityDecoder;
@@ -13,8 +15,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
+import com.myhomeloan.dto.CustomerDTO;
+import com.myhomeloan.model.AllPersonalDocs;
 import com.myhomeloan.model.Cibil;
 import com.myhomeloan.model.Customer;
 import com.myhomeloan.service.CustomerService;
@@ -26,21 +32,44 @@ import lombok.Getter;
 public class CustomerController {
 	@Autowired
 	private CustomerService customerService;
-    
-	
+
 	@GetMapping("/checkCibilStauts")
-	public ResponseEntity<String> checkEligibility(){
+	public ResponseEntity<String> checkEligibility() {
 		String string = customerService.getallCibil();
+	        System.out.println("RE :   "+string);
 		return ResponseEntity.status(HttpStatus.ACCEPTED).body(string);
 	}
-	
-	
-	
-	
-	@PostMapping("/saveCustomer")
-	public ResponseEntity<Customer> saveCustomer(@RequestBody Customer customer) {
+
+	/* Save Dummy Customer without Document */
+	@PostMapping("/saveCustomerwithoutdacument")
+	public ResponseEntity<Customer> saveCustomer(@RequestBody CustomerDTO customer) {
 		Customer customer2 = customerService.SaveCustomer(customer);
 		return ResponseEntity.status(HttpStatus.CREATED).body(customer2);
+	}
+
+	@PostMapping("/setDocument/{eID}")
+	public ResponseEntity<Customer> setDocument(@RequestPart MultipartFile addressproof,
+			@RequestPart MultipartFile pancard, @RequestPart MultipartFile itr, @RequestPart MultipartFile adharcard,
+			@RequestPart MultipartFile photo, @RequestPart MultipartFile signature,
+			@RequestPart MultipartFile bankcheque, @RequestPart MultipartFile salaryslips, @PathVariable int eID) {
+		Customer customer=null;
+		try {
+			AllPersonalDocs doc = new AllPersonalDocs();
+			doc.setAddharCard(adharcard.getBytes());
+			doc.setAddressproof(addressproof.getBytes());
+			doc.setBankcheque(bankcheque.getBytes());
+			doc.setItr(itr.getBytes());
+			doc.setPancard(pancard.getBytes());
+			doc.setPhoto(photo.getBytes());
+			doc.setSalaryslips(salaryslips.getBytes());
+			doc.setSignature(signature.getBytes());
+			 customer = customerService.findByEID(eID);
+			//customer.setCAllPersonalDocs(doc);
+		} catch (Exception e) {
+			
+		}
+
+		return ResponseEntity.status(HttpStatus.CREATED).body(customerService.SaveCustomerwithDocument(customer));
 	}
 
 	@GetMapping("/getAllCustomer")

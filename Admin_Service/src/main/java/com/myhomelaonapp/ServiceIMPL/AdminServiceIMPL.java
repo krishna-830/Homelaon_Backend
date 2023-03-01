@@ -18,9 +18,9 @@ public class AdminServiceIMPL implements AdminService {
 	}
 	
 	@Override
-	public Employee getEmployeeByName(String name) {
+	public Employee getEmployeeByName(String username) {
 	
-		return dao.findByName(name);
+		return dao.findByUsername(username);
 	}
 
 	@Override
@@ -28,6 +28,12 @@ public class AdminServiceIMPL implements AdminService {
 	
 		
 		return dao.save(employee);
+	}
+
+	@Override
+	public void deleteEmployeeByID(int empid) {
+	
+		dao.deleteById(empid); 
 	}
 
 	

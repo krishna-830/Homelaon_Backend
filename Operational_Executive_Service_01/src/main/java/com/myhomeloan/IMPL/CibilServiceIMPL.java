@@ -87,6 +87,12 @@ public class CibilServiceIMPL implements CibilService {
 		 
 	}
 
+	@Override
+	public List<Cibil> getAllCibilStatuses() {
+		
+		return crepo.findAll();
+	}
+
 	
 
 	

@@ -1,6 +1,7 @@
 package com.myhomeloan.model;
 
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,7 +21,7 @@ public class LoanDetails {
 	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int loanId;
 	private int loanNo;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private EMIDetails Emidetails;
 	private double loanAmount;
 	private int rateOfInterest;

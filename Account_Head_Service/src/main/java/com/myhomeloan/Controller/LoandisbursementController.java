@@ -15,7 +15,7 @@ import com.myhomeloan.Service.LoanDisbursementService;
 import com.myhomeloan.model.LoanDisbursement;
 
 @RestController
-@RequestMapping("/accouthead-api")
+@RequestMapping("/acdis-api")
 public class LoandisbursementController {
 
 	@Autowired
