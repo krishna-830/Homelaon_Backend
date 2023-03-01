@@ -10,4 +10,6 @@ public interface AdminService {
 
 	Employee updateEmployee(Employee employee);
 
+	void deleteEmployeeByID(int empid);
+
 }
