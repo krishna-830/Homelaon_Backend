@@ -1,5 +1,6 @@
 package com.myhomeloan.Model;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,20 +19,24 @@ public class SanctionLetter {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int sid;
-    private String sanctionDate;
-    private int prospectNo;
-    private String applicantName;
-    private double contactDetails;
-    private String product;
-    private double loanAmtSanctioned;
-    private String interestType;
-    private int rateOfInterest;
-    private int loanTenure;
+	private String sanctionDate;
+	private int prospectNo;
+	private String applicantName;
+	private String contactDetails;
+	private String product;
+	private double loanAmtSanctioned;
+	private String interestType;
+	private int rateOfInterest;
+	private int loanTenure;
 	private double monthlyEmiAmount;
 	private String modeOfPayment;
-    private String remarks;
+	private String remarks;
 	private String termsandCondition;
 	private String status;
-	private String email;
+    private String email;
+    
+   
+ 
+ //alldone
 
 }

@@ -16,10 +16,12 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Cibil {
 	@Id
+	 @GeneratedValue(strategy = GenerationType.AUTO)
 	private int cibilId;
 	private int cibilScore;
 	private String status;
 	private String remarks;
-	private int eID;
-
+	private int eid;
+ 
+	 //alldone
 }

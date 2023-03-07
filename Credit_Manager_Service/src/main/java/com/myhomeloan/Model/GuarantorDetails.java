@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class GuarantorDetails {
 	@Id
-	//   @GeneratedValue(strategy = GenerationType.AUTO)
+	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int gid;
 	private String gName; 
 	private String gDateofBirth;
@@ -25,6 +25,5 @@ public class GuarantorDetails {
 	private String gMortgageDetails;
 	private String gloaclAddress;
 	private String gPermanentAddress;
-
-
+//alldone
 }

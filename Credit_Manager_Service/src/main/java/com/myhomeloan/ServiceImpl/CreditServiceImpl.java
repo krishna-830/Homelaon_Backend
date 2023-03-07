@@ -79,7 +79,7 @@ public class CreditServiceImpl implements CreditService {
 		  for(Customer customer :clist)
 		 {
 			 
-			 if(checkCustomer(customer.getEID()))
+			 if(checkCustomer(customer.getEid()))
 			 {
 				 Customer savedcustomer = custrepo.save(customer);
 				 return "Ok";

@@ -32,7 +32,7 @@ public class CibilController {
 		List<Enquiry_Details> listof_Enquiry = enqlist.getBody();
 		
 	   for(Enquiry_Details en:listof_Enquiry) { 
-			 if(checkMyEnquiryByid(en.getEID())) {
+			 if(checkMyEnquiryByid(en.getEid())) {
 					Enquiry_Details enquiry= saveEnquiry(en);
 					Cibil c = new Cibil();			
 					int min =600;
@@ -41,7 +41,7 @@ public class CibilController {
 					c.setCibilScore(cibilscore);
 					c.setStatus("Okay");
 					c.setRemarks("Good");
-					c.setEID(enquiry.getEID());
+					c.setEid(c.getEid());
 					Cibil cibilsaved=saveCibil(c);
 			 }else {
 				

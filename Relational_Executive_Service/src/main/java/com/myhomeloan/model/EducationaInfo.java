@@ -18,5 +18,5 @@ public class EducationaInfo {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int eduid;
 	private String utype;
-
+//alldone
 }

@@ -21,9 +21,10 @@ public class Profession {
 	private int pid;
 	private String ptype;
 	private double psalary;
-	private String psalarytype;
+	private String palarytype;
 	private String pworkingperiod;
 	private String pDesignation;
 
 
+ //alldone
 }

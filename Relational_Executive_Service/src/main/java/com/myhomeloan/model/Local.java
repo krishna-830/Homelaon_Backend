@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class permanent {
+public class Local {
 
 	@Id
 	   @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,5 +24,10 @@ public class permanent {
 	private String state;
 	private double pincode;
 	private int houseno;
-	private String Streetname;
+	private String streetname;
+	
+	
+   
+  
+//alldone
 }

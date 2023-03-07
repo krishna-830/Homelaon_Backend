@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.openfeign.support.ResponseEntityDecoder;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,6 +30,7 @@ import lombok.Getter;
 
 @RestController
 @RequestMapping("/customer")
+@CrossOrigin("*")
 public class CustomerController {
 	@Autowired
 	private CustomerService customerService;
@@ -64,7 +66,7 @@ public class CustomerController {
 			doc.setSalaryslips(salaryslips.getBytes());
 			doc.setSignature(signature.getBytes());
 			 customer = customerService.findByEID(eID);
-			//customer.setCAllPersonalDocs(doc);
+			customer.setCAllPersonalDocs(doc);
 		} catch (Exception e) {
 			
 		}

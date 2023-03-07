@@ -17,13 +17,15 @@ import lombok.NoArgsConstructor;
 public class BankAddress {
 
 	@Id
-	//   @GeneratedValue(strategy = GenerationType.AUTO)
+	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int aid;
 	private String cityname;
 	private String areaname;
 	private String district;
 	private String state;
 	private double pincode;
-	private String Streetname;
+	private String streetname;
 
+   
+//alldone
 }

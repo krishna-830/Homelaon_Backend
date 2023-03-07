@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.EnableFeignClients"/>
+<fullyQualifiedTypeName name="javax.annotation.Generated"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.time.LocalDate"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.myhomeloan.model.Ledger"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-<fullyQualifiedTypeName name="com.myhomelaonapp.Model.Employee"/>
+<fullyQualifiedTypeName name="com.myhomeloan.model.Enquiry_Details"/>
+<fullyQualifiedTypeName name="com.myhomeloan.communication.EnquiryFiegn"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="com.myhomeloan.controller.CibilController"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="lombok.Getter"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="com.myhomeloan.proxyService.OEproxyService"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+<fullyQualifiedTypeName name="com.myhomeloan.model.Cibil"/>
+<fullyQualifiedTypeName name="com.myhomeloan.Repository.CibilRepo"/>
+<fullyQualifiedTypeName name="com.myhomeloan.serviceImpl.MailService"/>
+<fullyQualifiedTypeName name="com.cjc.model.Info"/>
+<fullyQualifiedTypeName name="com.myhomeloan.model.Info"/>
+<fullyQualifiedTypeName name="com.myhomeloan.ExceptionHandler.ResourceNotFoundException"/>
+<fullyQualifiedTypeName name="com.myhomeloan.model.SanctionLetter"/>
 <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
-<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="com.myhomeloan.proxyService.CMproxy"/>
+<fullyQualifiedTypeName name="com.myhomeloan.Repository.SanctionLettrerRepository"/>
+<fullyQualifiedTypeName name="com.myhomeloan.Repository.CustomerRepository"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Util"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.openfeign.support.ResponseEntityDecoder"/>
 </qualifiedTypeNameHistroy>

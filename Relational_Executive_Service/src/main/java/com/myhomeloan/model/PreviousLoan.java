@@ -29,6 +29,8 @@ public class PreviousLoan {
 	private String status;
 	private String remark;
 
-
+	
+    
+    //alldone
 
 }

@@ -1,4 +1,4 @@
-package com.myhomeloan.model;
+package com.myhomeloan.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,10 +13,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class permanent {
+public class Local {
 
 	@Id
-	 //  @GeneratedValue(strategy = GenerationType.AUTO)
+	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int aid;
 	private String cityname;
 	private String areaname;
@@ -24,5 +24,10 @@ public class permanent {
 	private String state;
 	private double pincode;
 	private int houseno;
-	private String Streetname;
+	private String streetname;
+	
+	
+   
+  
+//alldone
 }

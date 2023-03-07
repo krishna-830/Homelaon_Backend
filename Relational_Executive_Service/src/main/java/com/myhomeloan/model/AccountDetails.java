@@ -28,7 +28,7 @@ public class AccountDetails {
     private double contactNO;
     @OneToOne(cascade = CascadeType.ALL)
     private BankAddress branchAddress;
-    private String email;
+    private String email; 
     private String status;
 	
 
