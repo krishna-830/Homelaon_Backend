@@ -8,11 +8,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import com.myhomeloan.service.SanctionLetterService;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 import com.myhomeloan.model.*;
 @RestController
 @RequestMapping("/sanctionletter")
+@CrossOrigin("*")
 public class SanctionLetterController {
 	@Autowired
 	private SanctionLetterService service;
