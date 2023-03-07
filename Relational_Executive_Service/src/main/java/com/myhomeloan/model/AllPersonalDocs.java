@@ -16,7 +16,7 @@ public class AllPersonalDocs {
 	
 	@Id
 	   @GeneratedValue(strategy = GenerationType.AUTO)
-	private int documentID;
+	private int documentId;
 	private byte[] addressproof;
 	private byte[] pancard;
 	private byte[] itr;
@@ -26,6 +26,11 @@ public class AllPersonalDocs {
 	private byte[] bankcheque;
 	private byte[] salaryslips;
 	
-			
+	
+
+	
+
+//alldone
+	
 
 }

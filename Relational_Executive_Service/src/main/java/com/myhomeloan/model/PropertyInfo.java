@@ -28,5 +28,9 @@ public class PropertyInfo {
 	private double constructionprice;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-	private propertyAddress propertyAddress;
+	private PropertyAddress propertyAddress;
+	
+	
+ 
+  //alldone
 }

@@ -25,6 +25,5 @@ public class GuarantorDetails {
 	private String gMortgageDetails;
 	private String gloaclAddress;
 	private String gPermanentAddress;
-
-
+//alldone
 }

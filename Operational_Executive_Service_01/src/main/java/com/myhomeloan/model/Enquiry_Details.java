@@ -16,15 +16,19 @@ import lombok.NoArgsConstructor;
 public class Enquiry_Details {
 
 	@Id
-	//@GeneratedValue(strategy = GenerationType.AUTO)
-	private int eID;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int eid;
 	private String name;
-	private String DOB;
+	private String dob;
 	private int age;
 	private String gender;
 	private String email;
 	private double mobileNo;
 	private double pancardNo;
-	private double AddharCardNo;
+	private String addharCardNo;
 	
+	
+  
+  //alldone 
+  
 }

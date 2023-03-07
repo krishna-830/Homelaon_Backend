@@ -65,7 +65,7 @@ public class LedgerServiceIMPL implements LedgerService {
 				led.setLedgerCreatedDate("23-02-2023");
 				led.setTotalLoanAmount(sl.getLoanAmtSanctioned());
 				led.setPayableAmountwithInterest(sl.getLoanAmtSanctioned()+sl.getLoanAmtSanctioned()*1.35);
-				led.setMonthlyEMI(5500);
+				led.setMonthlyEmi(5500);
 				Ledger ledgersaved = ldao.save(led);
 				
 				

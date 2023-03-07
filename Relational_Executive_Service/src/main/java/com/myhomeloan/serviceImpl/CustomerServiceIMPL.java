@@ -81,9 +81,9 @@ public class CustomerServiceIMPL implements CustomerService {
 			Cibil cibilsaved = cibilrepo.save(cibil);
 			if(cibilsaved.getCibilScore()>=600) {
 				System.out.println("saved cibil");
-				System.out.println(cibilsaved.getEID());
-				//Customer customer=customerRepo.findById(cibilsaved.getEId()).orElseThrow(()->new ResourceNotFoundException("NO Details Found"));
-				Enquiry_Details eqn = enqrRepo.findById(cibilsaved.getEID()).orElseThrow(()-> new ResourceNotFoundException("No Enquiry Found With this Id"));
+				System.out.println(cibilsaved.getEid());
+			
+				Enquiry_Details eqn = enqrRepo.findById(cibilsaved.getEid()).orElseThrow(()-> new ResourceNotFoundException("No Enquiry Found With this Id"));
 				
 				sendmail("sourabhbhukan09@gmail.com",eqn.getEmail() , "Reply from MyHomeLoanFinance", "you are eligible for applying home loan from our bank");
 			}

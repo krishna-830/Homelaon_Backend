@@ -1,6 +1,7 @@
 package com.myhomeloan.model;
 
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,18 +17,20 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PreviousLoan {
 	@Id
-	  // @GeneratedValue(strategy = GenerationType.AUTO)
+	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int ploanId;
 	private double ploanAmount;
 	private int pTenure;
 	private double paidAmount;
 	private double remainingAmount;
 	private int deafulterCount;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private PreviousLoanBank pbankDetails;
 	private String status;
 	private String remark;
 
-
+	
+    
+    //alldone
 
 }

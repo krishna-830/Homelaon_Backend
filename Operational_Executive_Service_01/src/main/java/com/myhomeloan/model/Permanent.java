@@ -13,16 +13,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class propertyAddress {
+public class Permanent {
 
 	@Id
-	  // @GeneratedValue(strategy = GenerationType.AUTO)
+	 //  @GeneratedValue(strategy = GenerationType.AUTO)
 	private int aid;
-	private String areaname;
 	private String cityname;
+	private String areaname;
 	private String district;
 	private String state;
 	private double pincode;
-	private String streetname;
-	
+	private int houseno;
+	private String Streetname;
 }

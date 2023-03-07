@@ -24,6 +24,8 @@ public class BankAddress {
 	private String district;
 	private String state;
 	private double pincode;
-	private String Streetname;
+	private String streetname;
 
+   
+//alldone
 }

@@ -1,9 +1,8 @@
 package com.myhomeloan.Model;
 
-
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+
 import javax.persistence.Id;
 
 import javax.persistence.OneToOne;
@@ -12,54 +11,44 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Customer {
 	@Id
-//	   @GeneratedValue(strategy = GenerationType.AUTO)
-	
-	private int eID;
-	private String Name;
-	private String DOB;
-	private int Age;
-	private String Gender;
-	private String Email;
-    private double MobileNo;
-    private double cAdditionalMobileNo;
-    private double cAmountPaidforHome;
-    private double cToltalLoanRequired;
-    
-    @OneToOne
-    private EducationaInfo cEducationalInfo;
-    @OneToOne
-    private AllPersonalDocs cAllPersonalDocs;
-    @OneToOne
-    private CustomerAddress cAddress;
-    @OneToOne
-    private Profession cProfession;
-    @OneToOne
-    private Cibil ccbil;
-    @OneToOne
-    private LoanDetails cLoanDetails;
-    @OneToOne
-    private PreviousLoan cPreviousLoan;
-    @OneToOne
-    private AccountDetails cAccountDetails;
-    @OneToOne
-    private PropertyInfo cPropertyInfo;
-    @OneToOne
-    private GuarantorDetails cGuarantorDetails;
-    
 
-    
-    
-    
-    
-    
-	
-	
+	private int eid;
+	private String name;
+	private String dob;
+	private int age;
+	private String gender;
+	private String email;
+	private double mobileNo;
+	private double cAdditionalMobileNo;
+	private double cAmountPaidforHome;
+	private double cToltalLoanRequired;
 
+	@OneToOne(cascade = CascadeType.ALL)
+	private EducationaInfo cEducationalInfo;
+	@OneToOne(cascade = CascadeType.ALL)
+	private AllPersonalDocs cAllPersonalDocs;
+	@OneToOne(cascade = CascadeType.ALL)
+	private CustomerAddress cAddress;
+	@OneToOne(cascade = CascadeType.ALL)
+	private Profession cProfession;
+	@OneToOne(cascade = CascadeType.ALL)
+	private Cibil ccibil;
+	@OneToOne(cascade = CascadeType.ALL)
+	private LoanDetails cLoanDetails;
+	@OneToOne(cascade =CascadeType.ALL)
+	private PreviousLoan cPreviousLoan;
+	@OneToOne(cascade = CascadeType.ALL)
+	private AccountDetails cAccountDetails;
+	@OneToOne(cascade = CascadeType.ALL)
+	private PropertyInfo cPropertyInfo;
+	@OneToOne(cascade = CascadeType.ALL)
+	private GuarantorDetails cGuarantorDetails;
+
+	
 }

@@ -23,8 +23,8 @@ public class CustomerAddress {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int addressid;
 	@OneToOne(cascade = CascadeType.ALL)
-	private permanent permanent;
+	private Permanent permanant;
 	@OneToOne(cascade = CascadeType.ALL)
-	private local local;
-
+	private Local local;
+//alldone
 }

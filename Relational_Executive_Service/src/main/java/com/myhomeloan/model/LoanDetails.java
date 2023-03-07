@@ -22,7 +22,7 @@ public class LoanDetails {
 	private int loanId;
 	private int loanNo;
 	@OneToOne(cascade = CascadeType.ALL)
-	private EMIDetails Emidetails;
+	private EMIDetails emidetails;
 	private double loanAmount;
 	private int rateOfInterest;
 	private int tenure;
@@ -33,6 +33,5 @@ public class LoanDetails {
 	private String remark;
 	private String status;
 
-
-
+//alldone
 }

@@ -17,19 +17,20 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PreviousLoanBank {
 	
-	private String branchName;
-	private double branchCode;
+	
 	@Id
 	   @GeneratedValue(strategy = GenerationType.AUTO)
-	private int branchId;
-	private String Branchtype;
-	private String IFSCcode;
-	private String MICRcode;
-	private double ConatctNO;
+	private int branchid;
+	private String branchName;
+	private double branchCode;
+	private String ifsc;
+	private String micrCode;
+	private double conatctNo;
 	@OneToOne(cascade = CascadeType.ALL)
-	private BankAddress BranchAddress ;
-	private String Email;
+	private BankAddress branchAddress ;
+	private String email;
 	private String status;
 
 
+//alldone
 }

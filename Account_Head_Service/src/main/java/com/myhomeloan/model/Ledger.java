@@ -23,15 +23,19 @@ public class Ledger {
 	private double totalLoanAmount;
 	private double payableAmountwithInterest;
 	private int tenure;
-	private double monthlyEMI;
+	private double monthlyEmi;
 	private double amountPaidtillDate;
 	private double remainingAmount;
-	private String nextEmiDatestart;
-	private String nextEmiDateEnd;
+	private String nextEmiStartDate;
+	private String nextEmiEnddate;
 	private int defaulterCount;
-	private String previousEmiStatus;
+	private String previousEmitStatus;
 	private String currentMonthEmiStatus;
-	private String loanEnDate;
+	private String loanEndDate;
 	private String loanStatus;
 	
+
+	//alldone
+	
+
 }

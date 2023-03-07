@@ -17,13 +17,14 @@ import lombok.NoArgsConstructor;
 public class Profession {
 
 	@Id
-	   //@GeneratedValue(strategy = GenerationType.AUTO)
+	   @GeneratedValue(strategy = GenerationType.AUTO)
 	private int pid;
 	private String ptype;
 	private double psalary;
-	private String psalarytype;
+	private String palarytype;
 	private String pworkingperiod;
 	private String pDesignation;
-	private byte[] psalaryslips;
 
+
+ //alldone
 }
